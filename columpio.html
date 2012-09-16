@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Efecto Columpio</title>
+	<style type="text/css">
+		body{
+			background: #000;
+		}
+		.columpio{
+			width: 300px;
+			height: 100px;
+			margin: 0 auto;
+			margin-top: 30px;
+			background:#12a;
+			background-size: cover;
+			border-radius: 8px;
+			font-family: Tahoma;
+			text-align: center;
+			color:#fff;
+			box-shadow: -6px 6px 6px #ccc;
+		}
+		@-webkit-keyframes animar{
+			0%{-webkit-transform:rotate(0deg);}
+			20%{-webkit-transform:rotate(-20deg);}
+			40%{-webkit-transform:rotate(15deg);}
+			60%{-webkit-transform:rotate(-10deg);}
+			80%{-webkit-transform:rotate(5deg);}
+			100%{-webkit-transform:rotate(0deg);}
+		}
+		.columpio:hover{
+			-webkit-animation:animar 2s 1;
+		}
+	</style>
+</head>
+<body>
+	<div class='columpio'>
+		<span>Efecto Columpio</span>
+	</div>
+</body>
+</html>
